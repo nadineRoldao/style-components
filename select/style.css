@@ -1,0 +1,69 @@
+body {
+    background-color: teal;
+}
+
+.select-menu {
+    width: 216px;
+    cursor: pointer;
+    position: relative;
+}
+
+.select {
+    background-color: #fff;
+    padding: 7px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-list {
+    position: absolute;
+    width: 216px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 5px;
+    max-height: 63px;
+    overflow: hidden;
+    transition: .4s linear .2s;
+    height: 0;
+}
+
+.option {
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.option:hover,
+.option.selected {
+    color: #fff;
+    background-color: grey;
+}
+
+.options-list.active {
+    height: 63px;
+}
+
+.icon-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #67CB95;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.fa-angle-down {
+    color: #fff;
+    transition: transform 0.4s;
+}
+
+.fa-angle-down.active{
+    transform: rotate(180deg);
+}
